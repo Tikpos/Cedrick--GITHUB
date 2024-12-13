@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+}
+
+/* Nav Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    height: 80px;
+    background-color: #1f242d;
+}
+
+.Left::first-letter {
+    color: orange;
+}
+
+.Left a {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav .Right a {
+   margin: 0 10px;
+   font-weight: 500;
+   color: black;
+}
+
+nav .Right a :hover {
+    color: orange;
+ }
+
+/* Section 1 About Me */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin:  50px 0;
+    align-items: center;
+}
+
+.hero-section .about1 {
+    flex: 5;
+}
+
+.about .pic{
+    flex: 2;
+}
+
+@media (max-width: 600px) {
+    /* nav bar */
+    nav {
+        padding:0 20px;
+    }
+    nav .Right a {
+        font-size: 22px;
+    }
+    nav .Right a span{
+        display: none;
+    }
+}
+
+
